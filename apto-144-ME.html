@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <!-- PAGE INFO ---------------------------------------------------------------------->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APTO 144 | ME</title>
+    <!-- ICONES ------------------------------------------------------------------------->
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets-2/style.css" />
+    <!-- SYTLE CSS ---------------------------------------------------------------------->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONTS -------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- TOP MENU ----------------------------------------------------------------------->
+    <header id="header">
+      <nav class="container-reset">
+        <a class="logo-img" href=""
+          ><img src="img/logo-nav-gabriela.png" alt=""
+        /></a>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="index.html#home">Início</a></li>
+            <li><a class="title" href="index.html#about">Sobre</a></li>
+            <li><a class="title" href="index.html#my-projects">Projetos</a></li>
+            <li><a class="title" href="index.html#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+    <!-- CONTENT ------------------------------------------------------------------------>
+    <main>
+      <section class="section" id="project-menu">
+        <div class="container-reset grid">
+          <div class="menu-project-area">
+            <div class="project-type">PROJETOS / INTERIORES</div>
+            <div class="project-name">
+              <span class="title-project-name">Projeto:</span>
+              <p class="subtitle-project-name">APTO 144 | ME</p>
+            </div>
+            <div class="back-button">
+              <a href="index.html#my-projects"
+                ><i class="toggle icon-close"></i> VOLTAR</a
+              >
+            </div>
+          </div>
+          <div class="carousel-thumb-images">
+            <img
+              id="ProductImg"
+              src="img/projeto-apto-144-me/APTO 144 - ME_01.jpg"
+              width="100%"
+            />
+
+            <div class="small-img-row">
+              <div class="small-img-col">
+                <img
+                  class="SmallImg"
+                  src="img/projeto-apto-144-me/APTO 144 - ME_03.jpg"
+                  width="100%"
+                />
+              </div>
+
+              <div class="small-img-col">
+                <img
+                  class="SmallImg"
+                  src="img/projeto-apto-144-me/APTO 144 - ME_04.jpg"
+                  width="100%"
+                />
+              </div>
+
+              <div class="small-img-col">
+                <img
+                  class="SmallImg"
+                  src="img/projeto-apto-144-me/APTO 144 - ME_05.jpg"
+                  width="100%"
+                />
+              </div>
+
+              <div class="small-img-col">
+                <img
+                  class="SmallImg"
+                  src="img/projeto-apto-144-me/APTO 144 - ME_06.jpg"
+                  width="100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- GALERY THUMB PROJECTS -->
+    <script>
+      var ProductImg = document.getElementById('ProductImg')
+      var SmallImg = document.getElementsByClassName('SmallImg')
+      SmallImg[0].onclick = function () {
+        ProductImg.src = SmallImg[0].src
+      }
+      SmallImg[1].onclick = function () {
+        ProductImg.src = SmallImg[1].src
+      }
+      SmallImg[2].onclick = function () {
+        ProductImg.src = SmallImg[2].src
+      }
+      SmallImg[3].onclick = function () {
+        ProductImg.src = SmallImg[3].src
+      }
+    </script>
+    <!-- MAIN -->
+    <script src="main.js"></script>
+  </body>
+</html>

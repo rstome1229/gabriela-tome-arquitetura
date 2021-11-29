@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <!-- PAGE INFO ---------------------------------------------------------------------->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriela Arquitetura</title>
+    <!-- ICONES ------------------------------------------------------------------------->
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets-2/style.css" />
+    <!-- SWIPER ------------------------------------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- SYTLE CSS ---------------------------------------------------------------------->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONTS -------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINK PARA FILTER --------------------------------------------------------------->
+    <script src="jquery-3.4.1-libs.min.js"></script>
+    <script src="bootstrap-3.4.1-min.js"></script>
+  </head>
+
+  <body>
+    <!-- TOP MENU ----------------------------------------------------------------------->
+    <header id="header">
+      <nav class="container-reset">
+        <a class="logo-img" href=""
+          ><img src="img/logo-nav-gabriela.png" alt=""
+        /></a>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#my-projects">Projetos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+    <!-- CONTENT ------------------------------------------------------------------------>
+    <main>
+      <!------------ HOME ------------>
+      <section class="section" id="home">
+        <div class="container-reset grid">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="image swiper-slide">
+                <img src="img/image-home-swiper-1.png" alt="" />
+              </div>
+
+              <div class="image swiper-slide">
+                <img src="img/image-home-swiper-2.png" alt="" />
+              </div>
+
+              <div class="image swiper-slide">
+                <img src="img/image-home-swiper-3.png" alt="" />
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" id="prev"></div>
+            <div class="swiper-button-next" id="next"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="text">
+            <h2 class="title">Crie um visual novo e moderno para sua casa</h2>
+            <p class="subtitle">
+              Os projetos são como guias para uma melhor execução da obra,
+              buscando atender as normas técnicas exigidas e garantir que a
+              construção se adeque as vontades do cliente. Seu uso adequado
+              possibilita que se execute um serviço melhor planejado, com mais
+              economia, segurança, qualidade, comodidade e rapidez.
+            </p>
+            <a class="button" href="#" target="_blank">Faça seu Orçamento</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1" id="divider-margin-1"></div>
+      <!------------ ABOUT ------------>
+      <section class="section" id="about">
+        <div class="container-reset grid">
+          <div class="image">
+            <img src="img/gabriela-tome-foto.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre mim</h2>
+            <p class="subtitle">
+              Graduada em 2014 no curso de Arquitetura e Urbanismo pelo Centro
+              Universitário Belas Artes de São Paulo, a arquiteta Gabriela Tome
+              iniciou comando do escritório que leva o seu nome em 2018.<br /><br />"Em
+              nossos projetos buscamos alinhar estética, conforto,
+              funcionalidade e a otimização dos espaços com o orçamento
+              determinado pelo cliente." Gabriela Tomé.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2" id="divider-margin-2"></div>
+      <!------------ PROJECTS ------------>
+      <section class="section" id="my-projects">
+        <div class="container-reset grid">
+          <div id="portfolio" class="text-center paddsection">
+            <div class="section-title text-center">
+              <h2 class="title">Projetos</h2>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="portfolio-list">
+                    <ul class="nav list-unstyled" id="portfolio-flters">
+                      <li class="filter filter-active" data-filter=".all">
+                        Todos
+                      </li>
+                      <li class="filter" data-filter=".interiores">
+                        Interiores
+                      </li>
+                      <li class="filter" data-filter=".arquitetonicos">
+                        Arquitetônicos
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="portfolio-container">
+                    <div class="col-md-4 portfolio-thumbnail all interiores">
+                      <a class="popup-img" href="apto-05-LJ.html">
+                        <img
+                          class="image-projects"
+                          src="img/projeto-apto-05-lj.jpg"
+                          alt="img"
+                        />
+                        <div class="image-overlay">
+                          <div class="hover-title">APTO 05 | LJ</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4 portfolio-thumbnail all interiores">
+                      <a class="popup-img" href="apto-62-CG.html">
+                        <img src="img/projeto-apto-62-cg.jpg" alt="img" />
+                        <div class="image-overlay">
+                          <div class="hover-title">APTO 62 | CG</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4 portfolio-thumbnail all interiores">
+                      <a class="popup-img" href="apto-93-VD.html">
+                        <img src="img/projeto-apto-93-vd.jpg" alt="img" />
+                        <div class="image-overlay">
+                          <div class="hover-title">APTO 93 | VD</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4 portfolio-thumbnail all interiores">
+                      <a class="popup-img" href="apto-113-GV.html">
+                        <img src="img/projeto-apto-113-gv.JPG" alt="img" />
+                        <div class="image-overlay">
+                          <div class="hover-title">APTO 113 | GV</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4 portfolio-thumbnail all interiores">
+                      <a class="popup-img" href="apto-134-BM.html">
+                        <img src="img/projeto-apto-134-bm.jpg" alt="img" />
+                        <div class="image-overlay">
+                          <div class="hover-title">APTO 134 | BM</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4 portfolio-thumbnail all interiores">
+                      <a class="popup-img" href="apto-241-SR.html">
+                        <img src="img/projeto-apto-241-sr.jpg" alt="img" />
+                        <div class="image-overlay">
+                          <div class="hover-title">APTO 241 | SR</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4 portfolio-thumbnail all interiores">
+                      <a class="popup-img" href="apto-144-ME.html">
+                        <img src="img/projeto-apto-144-me.jpg" alt="img" />
+                        <div class="image-overlay">
+                          <div class="hover-title">APTO 144 | ME</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1" id="divider-margin-1"></div>
+      <!------------ CONTACT ------------>
+      <section class="section" id="contact">
+        <div class="container-reset grid">
+          <div class="text">
+            <h2 class="title">Meus contatos!</h2>
+            <p class="subtitle">
+              Clique no botão e preencha o formulário que aparecerá. Depois de
+              preencher<br />
+              é só aguardar que entraremos em contato o mais breve possível.
+            </p>
+            <a href="#" class="button" target="_blank"
+              ><i class="icon-paste"></i>Acesse o Formulário</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li>
+                <a
+                  href="https://www.instagram.com/gabrielatomearq/?hl=en"
+                  target="_blank"
+                  ><i class="icon-whatsapp"></i> @gabrielatomearq</a
+                >
+              </li>
+              <li>
+                <a><i class="icon-mail"> </i> gabriela@gabriela.com</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank"
+                  ><i class="icon-youtube"> </i> YouTube</a
+                >
+              </li>
+              <li>
+                <a href="https://pin.it/5ghTrjj" target="_blank"
+                  ><i class="icon-pinterest2"> </i> Pinterest</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2" id="divider-margin-2"></div>
+    </main>
+    <!------------ FOOTER ------------>
+    <footer class="section" id="#footer">
+      <div class="container-reset grid">
+        <div class="brand">
+          <a class="logo" href="#home">Gabriela<span>Tomé</span>.</a>
+          <p>©2021 GabrielaTomé.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- FILTER-PROJECTS -->
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="isotope.pkgd.min.js"></script>
+    <script>
+      $(window).load(function () {
+        var portfolioIsotope = $('.portfolio-container').isotope({
+          itemSelector: '.portfolio-thumbnail',
+          layoutMode: 'fitRows'
+        })
+
+        $('#portfolio-flters li').on('click', function () {
+          $('#portfolio-flters li').removeClass('filter-active')
+          $(this).addClass('filter-active')
+
+          portfolioIsotope.isotope({ filter: $(this).data('filter') })
+        })
+      })
+    </script>
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- MAIN -->
+    <script src="main.js"></script>
+  </body>
+</html>
